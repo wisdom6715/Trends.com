@@ -195,27 +195,31 @@ function updateCountdown() {
 function pageContents(){
     const mobileInteractiviness = window.matchMedia('(max-width: 760px)').matches 
     if(mobileInteractiviness){
-    
-    function mobileCurrentShow(){
-            if(buyingShow.style.display ==="none"){
-                buyingShow.style.display ="block"
-            } if(homePageMobile.style.display ==="block"){
-                homePageMobile.style.display ="none"
-            } else{
-                buyingShow.style.display ="block"
-                homePageMobile.style.display ="none"
-            }
-        }
-
         for(var i = 0; i < trendingBrands.length; i++){
             trendingBrands[i].addEventListener("click", function(){
-                mobileCurrentShow();
+                if(homePageMobile.style.display ==="block"){
+                    homePageMobile.style.display ="none"
+                    if(buyingShow.style.display ==="none"){
+                        buyingShow.style.display ="block"
+                    }
+                } else{
+                    buyingShow.style.display ="block"
+                    homePageMobile.style.display ="none"
+                }
             })
         }
 
         for(var i = 0; i < slidingCarousel.length; i++){
             slidingCarousel[i].addEventListener("click", function(){
-                mobileCurrentShow();
+                if(homePageMobile.style.display ==="block"){
+                    homePageMobile.style.display ="none"
+                    if(buyingShow.style.display ==="none"){
+                        buyingShow.style.display ="block"
+                    }
+                } else{
+                    buyingShow.style.display ="block"
+                    homePageMobile.style.display ="none"
+                }
             })
         }
         for(var i = 0; i < exploreLiveshow.length; i++){
@@ -268,13 +272,6 @@ function pageContents(){
             })
         }
         
-        productBoxLaunchPage.addEventListener("click", function(){
-            alert("clicks");
-        })
-        
-
-        
-       
         
         /*productPopupF
         ProductTag = 
