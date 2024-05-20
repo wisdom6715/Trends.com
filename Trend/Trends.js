@@ -4,7 +4,7 @@ let countdownValue = 3; // Initial countdown value
 let countdownInterval;
 
 var launchMobile = document.querySelector(".add-icon-for-mobile-live-launch");
-var launchIcon = document.querySelector("#Layer_1");
+var launchIcon1 = document.querySelector("#Layer_1");
 var launchLiveMobile = document.querySelector(".main-live-launching-page-for-phone-only-mobile-size");
 var ProfileMobile = document.querySelector(".icon-profile-mobile");
 
@@ -18,8 +18,6 @@ var homeIconMobile = document.querySelector(".home-icon");
 
 var mainLivePage = document.querySelector("#main-live-page");
 var mainLiveIcon = document.querySelector(".main-live-icon");
-
-
 
 var exploreIcon = document.querySelector(".explore-icon");
 
@@ -61,16 +59,11 @@ var profilePage = document.querySelector(".main-profile-page");
 var messagePath = document.querySelector(".message-path");
 var messagePage = document.querySelector(".main-messaging-page");
 
-
 var launchPath = document.querySelector(".launch-path");
 var launchPage = document.querySelector(".main-live-launching-page")
 
 var morePath = document.querySelector(".more-path");
 var morePage = document.querySelector(".more-popup-icon");
-
-var cancelIcon = document.querySelector("#Capa1");
-var mobileSideMenu = document.querySelector(".mobile-size-main-menu");
-var sideMenuCaller = document.querySelector("#Layer1");
 
 var inboxContainer = document.querySelector(".inbox-container");
 var mobileMessagingPage = document.querySelector(".main-messaging-page-for-phone-only-mobile-size");
@@ -90,84 +83,36 @@ var mainLivePage = document.querySelector(".main-live-page")
 var RandomShow = document.querySelector(".random-liveshow");
 var recommendedLiveshowList = document.querySelectorAll(".recommended-liveshow-contents")
 
-var profileLaunchLink = document.querySelector("#launch-group-button");
-
-var profileLinkUp = document.querySelector(".profile-profile-linkup");
-var mobileSizeMenu = document.querySelector(".mobile-size-main-menu");
-
-var orderPage = document.querySelector(".order-page");
-var orderContainer = document.querySelector(".order-container");
-
-var orderIcon = document.querySelector("#order-icon");
-var backOrderIcon = document.querySelector("#back-icon-order");
-
-
-var chatPageMobile = document.querySelector(".chatting-page-mobile");
-var chatBackIcon = document.querySelector("#chat-back-icon");
-var chatInfo = document.querySelectorAll(".main-messaging-for-phone-mobile-only-profile");
-var chatListPage  = document.querySelector("#tablets-messaging-page");
-var chatPageTablets = document.querySelector(".chat-page-tablets");
-
 var currentLiveShowPage = document.querySelector(".current-liveshow-page");
 var tabHomeSlide = document.querySelectorAll(".slider");
 var trendingBrands = document.querySelectorAll(".trending-brands");
 
-var settingsPage = document.querySelector(".brands-settings");
-var settingsContainer = document.querySelector(".settings-page-mobile");
-var settingsHeaderh1 = document.querySelector(".settings-header h1");
-
-var settingsbuttonTab = document.querySelector(".settings-button");
-var orderButton = document.querySelector(".order-button");
-
-var settingsBacIcon = document.querySelector("#settings-back-icon");
-
-var xCancelIcon = document.querySelector(".x-cancel-icon");
-var productBoxLaunchPage = document.querySelector("#product-box-launchpage");
-var liveProducts = document.querySelector(".live-products");
-
-var productPopupForm = document.querySelector(".product-upload-popup");
-
-var ProductTag = document.querySelectorAll(".fill-up");
-
-var uploadCancel = document.querySelector(".x-upload-icon")
-var productUpload = document.querySelector(".product-upload-popup");
-
-var productUploadTab = document.querySelector(".product-upload-popup-tablets")
-var cancelUpload = document.querySelector(".cancel-upload");
-
-var listProductLists = document.querySelector("#live-products");
-var productBoxTab = document.querySelector("#product-box");
-var fillUpBox = document.querySelectorAll(".fill-up");
-
-var productPurchase = document.querySelectorAll(".product-upload");
-var continuePopUp = document.querySelector(".continue-pop-up");
+var productUploadList = document.querySelectorAll(".product-upload");
+var buyingContinuePopup = document.querySelector(".continue-popup");
 var cancelContinue = document.querySelector(".continue-cancel");
-var continueDismiss = document.querySelector(".dismiss");
 
-var productVerification = document.querySelector(".continue-popup");
-var purchaseImage = document.querySelectorAll(".product-upload");
-
-var brandsStatsLive = document.querySelector(".brands-stats-live")
-var brandsProfilePage = document.querySelector(".brands-profile-page")
-var brandsProfileBackIcon = document.querySelector(".brand-profile-header-back-icon");
-
+var productLaunchBox = document.querySelector("#product-box-launchpage");
+var uploadProductPopup = document.querySelector(".product-upload-popup");
+var productFillUpBox = document.querySelectorAll(".fill-up")
+var fillUPContainer = document.querySelector(".live-products")
+var uploadCancel = document.querySelector(".x-upload-icon");
 
 
 function replaceSVG() {
     const isMobile = window.matchMedia('(max-width: 760px)').matches;
 
-    if(isMobile){
-        launchMobile.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="nav-icon" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="24" height="24"><title>Launch live</title><path d="M17,12c0,.553-.448,1-1,1h-3v3c0,.553-.448,1-1,1s-1-.447-1-1v-3h-3c-.552,0-1-.447-1-1s.448-1,1-1h3v-3c0-.553,.448-1,1-1s1,.447,1,1v3h3c.552,0,1,.447,1,1Zm7-7v14c0,2.757-2.243,5-5,5H5c-2.757,0-5-2.243-5-5V5C0,2.243,2.243,0,5,0h14c2.757,0,5,2.243,5,5Zm-2,0c0-1.654-1.346-3-3-3H5c-1.654,0-3,1.346-3,3v14c0,1.654,1.346,3,3,3h14c1.654,0,3-1.346,3-3V5Z"/></svg>'
-    }    
-   
-    if(isMobile){
-        ProfileMobile.innerHTML =  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><g id="_01_align_center" data-name="01 align center"><path d="M21,24H19V18.957A2.96,2.96,0,0,0,16.043,16H7.957A2.96,2.96,0,0,0,5,18.957V24H3V18.957A4.963,4.963,0,0,1,7.957,14h8.086A4.963,4.963,0,0,1,21,18.957Z"/><path d="M12,12a6,6,0,1,1,6-6A6.006,6.006,0,0,1,12,12ZM12,2a4,4,0,1,0,4,4A4,4,0,0,0,12,2Z"/></g></svg>'
+    if (isMobile) {
+        if (launchMobile) {
+            launchMobile.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="nav-icon" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="24" height="24"><title>Launch live</title><path d="M17,12c0,.553-.448,1-1,1h-3v3c0,.553-.448,1-1,1s-1-.447-1-1v-3h-3c-.552,0-1-.447-1-1s.448-1,1-1h3v-3c0-.553,.448-1,1-1s1,.447,1,1v3h3c.552,0,1,.447,1,1Zm7-7v14c0,2.757-2.243,5-5,5H5c-2.757,0-5-2.243-5-5V5C0,2.243,2.243,0,5,0h14c2.757,0,5,2.243,5,5Zm-2,0c0-1.654-1.346-3-3-3H5c-1.654,0-3,1.346-3,3v14c0,1.654,1.346,3,3,3h14c1.654,0,3-1.346,3-3V5Z"/></svg>';
+        }
+
+        if (ProfileMobile) {
+            ProfileMobile.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><g id="_01_align_center" data-name="01 align center"><path d="M21,24H19V18.957A2.96,2.96,0,0,0,16.043,16H7.957A2.96,2.96,0,0,0,5,18.957V24H3V18.957A4.963,4.963,0,0,1,7.957,14h8.086A4.963,4.963,0,0,1,21,18.957Z"/><path d="M12,12a6,6,0,1,1,6-6A6.006,6.006,0,0,1,12,12ZM12,2a4,4,0,1,0,4,4A4,4,0,0,0,12,2Z"/></g></svg>';
+        }
     }
 
 }
 replaceSVG();
-
-
 
 function startLiveStream() {
     if(countdownElement.style.display ==="none"){
@@ -197,11 +142,9 @@ function pageContents(){
     if(mobileInteractiviness){
         for(var i = 0; i < trendingBrands.length; i++){
             trendingBrands[i].addEventListener("click", function(){
-                if(homePageMobile.style.display ==="block"){
-                    homePageMobile.style.display ="none"
-                    if(buyingShow.style.display ==="none"){
-                        buyingShow.style.display ="block"
-                    }
+                if(buyingShow.style.display ==="none"){
+                    buyingShow.style.display ="block"
+                    homePageMobile.style.display ="none" 
                 } else{
                     buyingShow.style.display ="block"
                     homePageMobile.style.display ="none"
@@ -211,14 +154,12 @@ function pageContents(){
 
         for(var i = 0; i < slidingCarousel.length; i++){
             slidingCarousel[i].addEventListener("click", function(){
-                if(homePageMobile.style.display ==="block"){
-                    homePageMobile.style.display ="none"
-                    if(buyingShow.style.display ==="none"){
-                        buyingShow.style.display ="block"
-                    }
+                if(buyingShow.style.display ==="none"){
+                    buyingShow.style.display ="block"
+                    homePageMobile.style.display ="none" 
                 } else{
                     buyingShow.style.display ="block"
-                    homePageMobile.style.display ="none"
+                    homePageMobile.style.display ="none" 
                 }
             })
         }
@@ -237,68 +178,94 @@ function pageContents(){
         }
         for(var i = 0; i < recommendedLiveshowList.length; i++){
             recommendedLiveshowList[i].addEventListener("click", function(){
-                if(mainLivePage.style.display ==="grid"){
-                    mainLivePage.style.display ="none"
-                    if(buyingShow.style.display ==="none"){
-                        buyingShow.style.display ="block"
-                    } 
-                }  else{
-                    buyingShow.style.display ="block"
-                    mainLivePage.style.display ="none"
-                }
-            })
-        }
-        RandomShow.addEventListener("click", function(){
-            if(mainLivePage.style.display ==="grid"){
-                mainLivePage.style.display ="none"
                 if(buyingShow.style.display ==="none"){
                     buyingShow.style.display ="block"
+                    mainLivePage.style.display ="none"
                 }
-            } 
-            else{
-                buyingShow.style.display ="block"
-                mainLivePage.style.display ="none"
-            } 
-        })
-      
-
-        for(var i = 0; i < ProductTag.length; i++){
-            ProductTag[i].addEventListener("click", function(){
-                if(productPopupForm.style.display ==="none"){
-                    productPopupForm.style.display ="flex"
-                } else{
-                    productPopupForm.style.display ="flex"
+                else{
+                    buyingShow.style.display ="block"
+                    mainLivePage.style.display ="none"
                 }
             })
         }
+        document.addEventListener('DOMContentLoaded', function() {
+            var buyingShow = document.querySelector(".current-liveshow-mobile-page-main");
+            var RandomShow = document.querySelector(".random-liveshow");
+            var mainLivePage = document.querySelector(".main-live-page")// Replace with your actual element ID
         
+            if (!RandomShow) {
+                return;
+            }
+            
+            if (!buyingShow) {
+                console.error('Element with id "buyingShow" not found.');
+                return;
+            }
         
-        /*productPopupF
-        ProductTag = 
-        uploadCancel 
-        productUpload
-        productBox.addEventListener("click", function(){
-            liveProducts.style.display = (liveProducts.style.display === "none") ? "flex" : "none";
-        });*/
+            if (!mainLivePage) {
+                console.error('Element with id "mainLivePage" not found.');
+                return;
+            }
         
-        for(var i = 0; i < purchaseImage.length; i++){
-            purchaseImage[i].addEventListener("click", function(){
-                if(productVerification.style.display ==="none"){
-                    productVerification.style.display ="flex"
+            RandomShow.addEventListener('click', function() {
+                if (buyingShow.style.display === 'none') {
+                    buyingShow.style.display = 'block';
+                    mainLivePage.style.display = 'none';
+                } else {
+                    buyingShow.style.display = 'block';
+                    mainLivePage.style.display = 'none';
+                }
+            });
+        });
+       
+        
+        for(var k = 0; k < productUploadList .length; k++){
+            productUploadList[k].addEventListener("click", function(){
+                if(buyingContinuePopup.style.display ==="none"){
+                    buyingContinuePopup.style.display ="flex"
                 } else{
-                    productVerification.style.display ="flex"
+                    buyingContinuePopup.style.display ="flex"
                 }
             })
-        }   
-        cancelContinue.addEventListener("click", function(){
-            if(productVerification.style.display ==="flex"){
-                productVerification.style.display ="none"
+        }
+        if (cancelContinue) {
+            cancelContinue.addEventListener("click", function() {
+                if (buyingContinuePopup.style.display === "flex") {
+                    buyingContinuePopup.style.display = "none";
+                } else {
+                    buyingContinuePopup.style.display = "none";
+                }
+            });
+        }
+      
+        productLaunchBox.addEventListener("click", function(){
+            if(fillUPContainer.style.display ==="none"){
+                fillUPContainer.style.display ="flex"
             } else{
-                productVerification.style.display ="none"
+                fillUPContainer.style.display ="none"
             }
         })
-        
+        for(var l = 0; l < productFillUpBox.length; l++){
+            productFillUpBox[l].addEventListener("click", function(){
+                if(uploadProductPopup.style.display ==="none"){
+                    uploadProductPopup.style.display ="flex"
+                } else{
+                    uploadProductPopup.style.display ="flex"
+                }
+            })
+        }
 
+        uploadCancel.addEventListener("click", function(){
+            if(uploadProductPopup.style.display ==="flex"){
+                uploadProductPopup.style.display ="none"
+            } else{
+                uploadProductPopup.style.display ="none"
+            }
+        })
+
+        
+/*
+// */
     }
     
                 
