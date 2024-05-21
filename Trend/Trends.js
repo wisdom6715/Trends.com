@@ -2,6 +2,7 @@
 let countdownElement = document.getElementById('countdown');
 let countdownValue = 3; // Initial countdown value
 let countdownInterval;
+var onLivePage = document.querySelector(".real-on-live-page");
 
 var launchMobile = document.querySelector(".add-icon-for-mobile-live-launch");
 var launchIcon1 = document.querySelector("#Layer_1");
@@ -98,6 +99,8 @@ var fillUPContainer = document.querySelector(".live-products")
 var uploadCancel = document.querySelector(".x-upload-icon");
 
 
+
+
 function replaceSVG() {
     const isMobile = window.matchMedia('(max-width: 760px)').matches;
 
@@ -133,7 +136,12 @@ function updateCountdown() {
     if (countdownValue < 0) {
         clearInterval(countdownInterval); // Stop the countdown
         countdownElement.textContent = 'GO LIVE!';
-        // Add logic here to initiate the live stream
+        if(onLivePage.style.display ==="none"){
+            onLivePage.style.display ="block"
+        } else{
+            onLivePage.style.display ="block"
+        }
+        
     }
 }
 

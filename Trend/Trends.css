@@ -2714,6 +2714,17 @@ svg{
         position: absolute;
         top: .6rem;
         right: .5rem;
+    }
+    .brand-registration{
+        color: white;
+        text-decoration: none;
+        background-color: black;
+        padding: .3rem 1.5rem;
+    }
+    .live-cancel{
+        position: absolute;
+        top: .6rem;
+        right: .5rem;
         fill: white;
     }
     .real-on-live-page{
@@ -2724,12 +2735,89 @@ svg{
         right: 0;
         width: 100%; 
         height: 100vh;
-        display: block;
+        display: none;
         z-index: 234556758689;
         background-color: rgb(164, 164, 164);
     }
+    .brand-going-live-profile-stats{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: .5rem;
+        width: 50%;
+        height: 6%;
+        margin-left: .5rem;
+        color: white;
+    }
+    .brands-going-live-profile{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: red;
+    }
+    .commenting-section-in-live{
+        position: absolute;
+        bottom: 1rem;
+        left: .5rem;
+        right: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+    .commenting-section-in-live input:focus{
+        outline: none;
+        color: white;
+    }
+    .commenting-section-in-live input::placeholder{
+        color: white;
+    }
+    .commenting-section-in-live input{
+        width: 70%;
+        height: 2rem;
+        padding-left: .5rem;
+        font-size: 1rem;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+       border: .1rem solid white;
+        background-color: transparent;
+    }
+    .send-a-comment{
+        fill: white;
+    }
+   
+    .listed-products-for-sales{
+        display: flex;
+        flex-direction: column;
+        margin-left: .5rem;
+        gap: 1rem;
+        margin-top: 2rem;
 
-
+    }
+    .listed-products{
+        width: 45px;
+        height: 45px;
+        background-color: aqua;
+    }
+    .you-are-live-popup-container{
+        display: none;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .you-are-live-popup{
+        width: 80%;
+        height: 20%;
+        text-align: center;
+        background-color: white;
+    }
+    .microphone{
+        position: absolute;
+        top: 4rem;
+        right: 0rem;
+    }
     /* message mobile begins*/
     .main-messaging-page-for-phone-only-mobile-size{
         position: fixed;
