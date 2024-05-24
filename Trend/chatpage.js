@@ -68,4 +68,23 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+var stayLive = document.querySelector(".stay");
+var leaveContainer = document.querySelector(".leave-popup-container");
+var liveCancel = document.querySelector(".live-cancel")
+
+liveCancel.addEventListener("click", function(){
+    if(leaveContainer.style.display ==="none"){
+        leaveContainer.style.display ="flex"
+    } else{
+        leaveContainer.style.display ="none"
+    }
+})
+stayLive.addEventListener("click", function(){
+    if(leaveContainer.style.display ==="flex"){
+        leaveContainer.style.display ="none"
+    } else{
+        leaveContainer.style.display ="none"
+    }
+})
+
 

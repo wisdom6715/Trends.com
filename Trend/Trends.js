@@ -98,6 +98,8 @@ var productFillUpBox = document.querySelectorAll(".fill-up")
 var fillUPContainer = document.querySelector(".live-products")
 var uploadCancel = document.querySelector(".x-upload-icon");
 
+var brandMessageLinkup = document.querySelector(".message-linkup");
+var chatAnchor = document.querySelector(".anchor-to-chat");
 
 
 
@@ -269,9 +271,9 @@ function pageContents(){
             } else{
                 uploadProductPopup.style.display ="none"
             }
-        })
-
+        }) 
         
+
 /*
 // */
     }
@@ -285,6 +287,7 @@ pageContents();
 
 
 
+/*
 
 function tabletsContents(){
     const tabletsInteractivity = window.matchMedia('(max-width: 991px) and (min-width: 761px)').matches;
@@ -941,4 +944,4 @@ function laptopContents(){
 
     }
 }
-laptopContents();
+laptopContents();*/
