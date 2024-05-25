@@ -101,7 +101,12 @@ var uploadCancel = document.querySelector(".x-upload-icon");
 var brandMessageLinkup = document.querySelector(".message-linkup");
 var chatAnchor = document.querySelector(".anchor-to-chat");
 
+var leftScroll = document.querySelector(".left-scroll");
+var rightScroll = document.querySelector(".right-scroll")
 
+var leftCarousel = document.querySelector(".left-carousel");
+var rightCarousel = document.querySelector(".right-carousel");
+var currentCarousel = document.querySelector(".current-carousel");
 
 function replaceSVG() {
     const isMobile = window.matchMedia('(max-width: 760px)').matches;
@@ -159,20 +164,21 @@ function pageContents(){
                     buyingShow.style.display ="block"
                     homePageMobile.style.display ="none"
                 }
+                /*if(buyingShow.style.display ==="none"){
+                  buyingShow.style.display ="block"
+                 homePageMobile.style.display ="none" 
+              } else{
+                buyingShow.style.display ="block"
+                  homePageMobile.style.display ="none" 
+              }*/
             })
         }
-
-        for(var i = 0; i < slidingCarousel.length; i++){
-            slidingCarousel[i].addEventListener("click", function(){
-                if(buyingShow.style.display ==="none"){
-                    buyingShow.style.display ="block"
-                    homePageMobile.style.display ="none" 
-                } else{
-                    buyingShow.style.display ="block"
-                    homePageMobile.style.display ="none" 
-                }
-            })
-        }
+        
+        
+        /*leftScroll.addEventListener("click", function(){
+            currentCarousel.style.backgroundImage ="url('images/WhatsApp\ Image\ 2024-05-15\ at\ 3.22.12\ PM\ \(2\).jpeg')"
+        })*/
+       
         for(var i = 0; i < exploreLiveshow.length; i++){
             exploreLiveshow[i].addEventListener("click", function(){
                 if(explorePageMobile.style.display ==="block"){
@@ -198,6 +204,9 @@ function pageContents(){
                 }
             })
         }
+
+          
+
         document.addEventListener('DOMContentLoaded', function() {
             var buyingShow = document.querySelector(".current-liveshow-mobile-page-main");
             var RandomShow = document.querySelector(".random-liveshow");
@@ -246,33 +255,38 @@ function pageContents(){
                     buyingContinuePopup.style.display = "none";
                 }
             });
-        }
-      
-        productLaunchBox.addEventListener("click", function(){
-            if(fillUPContainer.style.display ==="none"){
-                fillUPContainer.style.display ="flex"
-            } else{
-                fillUPContainer.style.display ="none"
-            }
-        })
-        for(var l = 0; l < productFillUpBox.length; l++){
-            productFillUpBox[l].addEventListener("click", function(){
-                if(uploadProductPopup.style.display ==="none"){
-                    uploadProductPopup.style.display ="flex"
-                } else{
-                    uploadProductPopup.style.display ="flex"
-                }
-            })
-        }
-
-        uploadCancel.addEventListener("click", function(){
-            if(uploadProductPopup.style.display ==="flex"){
-                uploadProductPopup.style.display ="none"
-            } else{
-                uploadProductPopup.style.display ="none"
-            }
-        }) 
+        } 
+        function sideCarousel(){
+            var leftScroll = document.querySelector(".left-scroll");
+            var rightScroll = document.querySelector(".right-scroll")
+            var leftCarousel = document.querySelector(".left-carousel");
+            var rightCarousel = document.querySelector(".right-carousel");
+            var currentCarousel = document.querySelector(".current-carousel");
         
+            var images = [
+                "images/WhatsApp Image 2024-05-15 at 3.22.12 PM (3).jpeg",
+                "images/WhatsApp Image 2024-05-15 at 3.22.12 PM (2).jpeg",
+                "images/WhatsApp Image 2024-05-15 at 3.22.12 PM.jpeg",
+              ];
+            
+            var currentIndex = 0;
+        
+            currentCarousel.style.backgroundImage = "url('" + images[currentIndex] + "')";
+        
+            rightScroll.addEventListener("click", function() {
+            currentIndex = (currentIndex + 1) % images.length;
+            leftCarousel.style.backgroundImage = "url('" + images[currentIndex] + "')";
+            currentCarousel.style.backgroundImage = "url('" + images[currentIndex] + "')";
+            });
+        
+            leftScroll.addEventListener('click', function() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            rightCarousel.style.backgroundImage = "url('" + images[currentIndex] + "')";
+            currentCarousel.style.backgroundImage = "url('" + images[currentIndex] + "')";
+            });
+        
+        }
+        sideCarousel();
 
 /*
 // */

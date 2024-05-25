@@ -2298,9 +2298,9 @@ svg{
         align-items: center;
         justify-content: center;
     }
-    #sliding-carousel{
+   #sliding-carousel{
         display: grid;
-        grid-template-columns: 1fr 11fr 1fr;
+        grid-template-columns: 7% 5fr 7%;
         grid-template-rows: 1fr;
         width: 99%;
         height:90%;
@@ -2312,11 +2312,23 @@ svg{
         background-color: grey;
         height: 93%;
         margin-top: 80%;
+        background-image: url("images/WhatsApp\ Image\ 2024-05-15\ at\ 3.22.12\ PM\ \(2\).jpeg");
+        background-repeat: no-repeat;
+        background-size: fit;
+        background-position: center center;
+        background-attachment: fixed;
+        background-blend-mode: multiply;
     }
     .right-carousel{
         background-color: gray;
-        height: 94%;
+        height: 93%;
         margin-top: 80%;
+        background-image: url("images/An\ Online\ Marketer\'s\ Guide\ To\ Mastering\ Livestream\ Shopping.jfif");
+        background-repeat: no-repeat;
+        background-size: fit;
+        background-position: center center;
+        background-attachment: fixed;
+        background-blend-mode: multiply;
     }
     .current-carousel{
         background-color: grey;
@@ -2326,23 +2338,18 @@ svg{
         background-position: center center;
         background-attachment: fixed;
     }
-    .trending-brands-list{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        width: 98%;
-        height: 100%;
-        column-gap: .5rem;
-        row-gap: 1.5rem; 
-        margin-left: .2rem;
+    .side-scroll{
+        fill: white;
+        margin-top: 850%;
+        height: 2.5rem;
     }
-    .trending-brands{
-        background-color: rgb(255, 255, 255);
-        border-radius: 1rem;
-        height: 100%;
-        display: grid;
-        grid-template-rows: 85% 10%;
-        gap: 1rem;
+    .right-scroll{
+        position: relative;
+        right: 20%;
+    }
+    .left-scroll{
+        position: relative;
+        right: 20%;
     }
     .live-container{
         background-color: grey;

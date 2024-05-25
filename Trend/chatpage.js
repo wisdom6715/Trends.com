@@ -36,6 +36,8 @@
 uploadProductPopu
 productFillUpBox */
 
+
+
 document.addEventListener("DOMContentLoaded", function() {
     let chatPageMobile = document.querySelector(".chatting-page-mobile");
     let chatListmobile = document.querySelectorAll(".main-messaging-for-phone-mobile-only-profile");
@@ -86,5 +88,6 @@ stayLive.addEventListener("click", function(){
         leaveContainer.style.display ="none"
     }
 })
+
 
 
